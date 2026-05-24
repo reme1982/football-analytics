@@ -111,6 +111,13 @@ Ejecuta las celdas en orden de arriba hacia abajo. Los gráficos se guardan auto
 
 ---
 
+## Nota sobre archivos generados
+
+Los archivos de base de datos (`.db`) no están incluidos en el repositorio por su tamaño.
+Se generan automáticamente al ejecutar cada notebook. La descarga inicial puede tardar entre 5-10 minutos dependiendo de la conexión.
+
+---
+
 ## Fuente de datos
 
 [StatsBomb Open Data](https://github.com/statsbomb/open-data) — datos de uso libre para educación e investigación.
