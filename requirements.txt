@@ -1,0 +1,6 @@
+statsbombpy
+pandas
+matplotlib
+mplsoccer
+numpy
+jupyter
