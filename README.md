@@ -1,7 +1,21 @@
 # Football Analytics con StatsBomb
 
-Análisis interactivo de datos de fútbol usando datos abiertos de **StatsBomb** y Python.  
-El proyecto analiza en profundidad el partido **Manchester City 1 – 4 Liverpool** (Premier League, 21 Nov 2015).
+Colección de proyectos de análisis de fútbol usando datos abiertos de **StatsBomb** y Python.
+
+---
+
+## Proyectos
+
+| # | Proyecto | Descripción |
+|---|---|---|
+| 01 | [Manchester City vs Liverpool](Analisis_StatsBomb.ipynb) | Análisis profundo de un partido: xG, mapas de tiros, red de pases, evolución por minuto |
+| 02 | [Análisis de Temporada con SQL](02_season_analysis/) | Base de datos SQLite con 1.3M eventos, consultas SQL sobre los 380 partidos de la Premier League 2015/16 |
+
+---
+
+## Proyecto 01 — Manchester City 1–4 Liverpool
+
+Análisis en profundidad del partido **Manchester City 1 – 4 Liverpool** (Premier League, 21 Nov 2015).
 
 ---
 
