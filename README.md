@@ -6,10 +6,11 @@ Colección de proyectos de análisis de fútbol usando datos abiertos de **Stats
 
 ## Proyectos
 
-| # | Proyecto | Descripción |
-|---|---|---|
-| 01 | [Manchester City vs Liverpool](Analisis_StatsBomb.ipynb) | Análisis profundo de un partido: xG, mapas de tiros, red de pases, evolución por minuto |
-| 02 | [Análisis de Temporada con SQL](02_season_analysis/) | Base de datos SQLite con 1.3M eventos, consultas SQL sobre los 380 partidos de la Premier League 2015/16 |
+| # | Proyecto | Herramientas | Descripción |
+| --- | --- | --- | --- |
+| 01 | [Manchester City vs Liverpool](Analisis_StatsBomb.ipynb) | Python · mplsoccer | Análisis profundo de un partido: xG, mapas de tiros, red de pases, evolución por minuto |
+| 02 | [Análisis de Temporada con SQL](02_season_analysis/) | SQLite · pandas | Base de datos con 1.3M eventos, consultas SQL sobre los 380 partidos de la Premier League 2015/16 |
+| 03 | [Perfiles de Jugadores con ML](03_player_profiles/) | scikit-learn · KMeans | Clustering de 502 jugadores en 5 perfiles tácticos, radar charts y comparador individual |
 
 ---
 
@@ -17,107 +18,150 @@ Colección de proyectos de análisis de fútbol usando datos abiertos de **Stats
 
 Análisis en profundidad del partido **Manchester City 1 – 4 Liverpool** (Premier League, 21 Nov 2015).
 
----
-
-## Resumen Ejecutivo
-
-### Contexto
-El partido **Manchester City 1 – 4 Liverpool** del 21 de noviembre de 2015 es uno de los resultados más sorprendentes de la Premier League 2015/16. Manchester City llegaba como favorito jugando de local, con mayor posesión y volumen de pases. Sin embargo, Liverpool fue ampliamente superior en las métricas que realmente determinan el resultado.
-
 ### Hallazgos principales
 
-**1. Liverpool ganó sin tener el balón**  
-Manchester City dominó la posesión (55.5% vs 44.5%) y dio significativamente más pases (610 vs 417), pero eso no se tradujo en peligro real. Liverpool demostró que la eficiencia supera al volumen.
+**1. Liverpool ganó sin tener el balón**
+Manchester City dominó la posesión (55.5% vs 44.5%) y dio más pases (610 vs 417), pero eso no se tradujo en peligro real.
 
-**2. El xG justifica el resultado**  
-El modelo de Expected Goals confirma la superioridad de Liverpool: generó un xG de **3.25** frente al **0.90** de Manchester City. Liverpool no solo marcó más, sino que sus ocasiones fueron de mayor calidad — la mayoría desde dentro del área y en posiciones frontales al arco.
+**2. El xG justifica el resultado**
+Liverpool generó un xG de **3.25** frente al **0.90** de Manchester City. Sus ocasiones fueron de mayor calidad — la mayoría desde dentro del área.
 
-**3. Liverpool presionó y recuperó mucho más**  
-Con **291 recuperos de balón** contra 197 de Manchester City, Liverpool aplicó una presión sistemática que generó transiciones rápidas. Adam Lallana lideró las presiones con 33 acciones, seguido de Roberto Firmino con 31.
+**3. Liverpool presionó y recuperó mucho más**
+Con **291 recuperos de balón** contra 197 de Manchester City, Liverpool aplicó una presión sistemática que generó transiciones rápidas.
 
-**4. La primera mitad fue determinante**  
-El análisis de la evolución por minuto muestra que Liverpool marcó tres goles antes del descanso (22', 31', 43'), rompiendo el partido en la primera mitad. Manchester City nunca pudo reaccionar tácticamente.
+**4. La primera mitad fue determinante**
+Liverpool marcó tres goles antes del descanso (22', 31', 43'). Manchester City nunca pudo reaccionar tácticamente.
 
-**5. La red de pases revela estilos opuestos**  
-Manchester City distribuyó desde atrás con Kolarov (86 pases) como principal circulador, generando una red amplia pero con pocas conexiones profundas. Liverpool en cambio mostró conexiones densas en el mediocampo central, facilitando transiciones más verticales.
+**5. La red de pases revela estilos opuestos**
+Manchester City distribuyó desde atrás con Kolarov (86 pases) como principal circulador. Liverpool mostró conexiones densas en el mediocampo, facilitando transiciones verticales.
 
-**6. De Bruyne lideró recuperaciones para Man City**  
-Con 11 recuperaciones, Kevin De Bruyne fue el jugador más activo defensivamente para Manchester City, lo que refleja el esfuerzo individual ante una presión colectiva de Liverpool.
+### Visualizaciones
 
-### Conclusión
-Liverpool ejecutó un plan táctico preciso: ceder posesión, presionar alto, recuperar rápido y finalizar con eficacia. El resultado 4-1 no fue una sorpresa estadística — los datos lo respaldan completamente.
-
----
-
-## Visualizaciones
-
-### Tarjeta Resumen del Partido
 ![Resumen](graficos/paso_57_resumen_partido.png)
 
-### xG vs Goles Reales
 ![xG](graficos/paso_51_xg.png)
 
-### Mapa de Tiros
 ![Mapa de Tiros](graficos/paso_52_mapa_tiros.png)
 
-### Mapa de Calor de Pases
 ![Heatmap Pases](graficos/paso_53_heatmap_pases.png)
 
-### Red de Pases
 ![Red de Pases](graficos/paso_54_red_pases.png)
 
-### Evolución del Partido por Minuto
-![Evolución](graficos/paso_55_evolucion_partido.png)
-
-### Top 5 Jugadores por Métrica
-![Top Jugadores](graficos/paso_56_top_jugadores.png)
-
----
-
-## Métricas analizadas (por equipo)
+### Métricas por equipo
 
 | Métrica | Manchester City | Liverpool |
-|---|---|---|
+| --- | --- | --- |
 | Total Pases | 610 | 417 |
 | Precisión de Pase | 74.4% | 70.7% |
 | Tiros | 12 | 14 |
 | Tiros a Puerta | 1 | 3 |
 | Posesión | 55.5% | 44.5% |
 | Recuperos de Balón | 197 | 291 |
-| Duelos Ganados | 3 | 4 |
-| Intercepciones | 4 | 5 |
-| Faltas Cometidas | 11 | 13 |
 | xG | 0.90 | 3.25 |
 
 ---
 
 ## Tecnologías
 
-- **Python 3**
-- **statsbombpy** — acceso a datos abiertos de StatsBomb
-- **pandas** — manipulación de datos
-- **matplotlib** — gráficos estáticos
-- **mplsoccer** — visualizaciones sobre campo de fútbol
-- **Jupyter Notebook**
+- **Python 3** · **statsbombpy** · **pandas** · **matplotlib** · **mplsoccer** · **scikit-learn** · **SQLite3**
 
 ## Cómo ejecutar
 
 ```bash
-pip install statsbombpy mplsoccer pandas matplotlib jupyter
+pip install statsbombpy mplsoccer pandas matplotlib scikit-learn jupyter
 jupyter notebook Analisis_StatsBomb.ipynb
 ```
 
-Ejecuta las celdas en orden de arriba hacia abajo. Los gráficos se guardan automáticamente en la carpeta `graficos/`.
-
----
-
 ## Nota sobre archivos generados
 
-Los archivos de base de datos (`.db`) no están incluidos en el repositorio por su tamaño.
-Se generan automáticamente al ejecutar cada notebook. La descarga inicial puede tardar entre 5-10 minutos dependiendo de la conexión.
-
----
+Los archivos `.db` no están incluidos en el repositorio por su tamaño. Se generan automáticamente al ejecutar cada notebook (5–10 minutos de descarga inicial).
 
 ## Fuente de datos
 
 [StatsBomb Open Data](https://github.com/statsbomb/open-data) — datos de uso libre para educación e investigación.
+
+---
+
+---
+
+## Football Analytics with StatsBomb
+
+A collection of football data analysis projects using **StatsBomb** open data and Python.
+
+---
+
+## Projects
+
+| # | Project | Tools | Description |
+| --- | --- | --- | --- |
+| 01 | [Manchester City vs Liverpool](Analisis_StatsBomb.ipynb) | Python · mplsoccer | Deep single-match analysis: xG, shot maps, pass networks, minute-by-minute evolution |
+| 02 | [Season Analysis with SQL](02_season_analysis/) | SQLite · pandas | Database with 1.3M events, SQL queries across all 380 matches of the 2015/16 Premier League |
+| 03 | [Player Profiling with ML](03_player_profiles/) | scikit-learn · KMeans | Clustering 502 players into 5 tactical profiles, radar charts and individual comparison tool |
+
+---
+
+## Project 01 — Manchester City 1–4 Liverpool
+
+In-depth analysis of **Manchester City 1 – 4 Liverpool** (Premier League, 21 Nov 2015).
+
+### Key Findings
+
+**1. Liverpool won without the ball**
+Manchester City dominated possession (55.5% vs 44.5%) and completed more passes (610 vs 417), but that did not translate into real danger.
+
+**2. xG justifies the scoreline**
+Liverpool generated an xG of **3.25** vs **0.90** for Manchester City. Their chances were of much higher quality — mostly from inside the box.
+
+**3. Liverpool pressed and recovered far more**
+With **291 ball recoveries** vs 197 for Manchester City, Liverpool applied systematic pressure that generated quick transitions.
+
+**4. The first half was decisive**
+Liverpool scored three goals before half-time (22', 31', 43'). Manchester City was unable to adjust tactically.
+
+**5. Pass networks reveal opposite styles**
+Manchester City built from the back with Kolarov (86 passes) as the main distributor. Liverpool showed dense central midfield connections, enabling vertical transitions.
+
+### Visualizations
+
+![Match Summary](graficos/paso_57_resumen_partido.png)
+
+![xG](graficos/paso_51_xg.png)
+
+![Shot Map](graficos/paso_52_mapa_tiros.png)
+
+![Pass Heatmap](graficos/paso_53_heatmap_pases.png)
+
+![Pass Network](graficos/paso_54_red_pases.png)
+
+### Team Statistics
+
+| Metric | Manchester City | Liverpool |
+| --- | --- | --- |
+| Total Passes | 610 | 417 |
+| Pass Accuracy | 74.4% | 70.7% |
+| Shots | 12 | 14 |
+| Shots on Target | 1 | 3 |
+| Possession | 55.5% | 44.5% |
+| Ball Recoveries | 197 | 291 |
+| xG | 0.90 | 3.25 |
+
+---
+
+## Tech Stack
+
+- **Python 3** · **statsbombpy** · **pandas** · **matplotlib** · **mplsoccer** · **scikit-learn** · **SQLite3**
+
+## How to Run
+
+```bash
+pip install statsbombpy mplsoccer pandas matplotlib scikit-learn jupyter
+jupyter notebook Analisis_StatsBomb.ipynb
+```
+
+## Note on Generated Files
+
+`.db` files are not included in the repository due to their size. They are generated automatically when running each notebook (initial download takes 5–10 minutes).
+
+## Data Source
+
+[StatsBomb Open Data](https://github.com/statsbomb/open-data) — free to use for education and research.
