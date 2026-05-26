@@ -13,6 +13,7 @@ Colección de proyectos de análisis de fútbol usando datos abiertos de **Stats
 | 03 | [Perfiles de Jugadores con ML](03_player_profiles/) | scikit-learn · KMeans | Clustering de 502 jugadores en 5 perfiles tácticos, radar charts y comparador individual |
 | 04 | [Scouting Dashboard](04_scouting/) | Streamlit · Plotly · FBref | Dashboard interactivo con beeswarm, percentiles por posición y similitud de jugadores (PL 2024-25) |
 | 05 | [Análisis Táctico](05_tactical_analysis/) | mplsoccer · StatsBomb | Posiciones medias, red de pases de temporada, PPDA y mapas de presión — Leicester City 2015/16 |
+| 06 | [Modelo de xG](06_xg_model/) | scikit-learn · StatsBomb | Modelo de Expected Goals desde cero: features geométricas + freeze frame, Logistic Regression vs Gradient Boosting |
 
 ---
 
@@ -101,6 +102,7 @@ A collection of football data analysis projects using **StatsBomb** open data an
 | 03 | [Player Profiling with ML](03_player_profiles/) | scikit-learn · KMeans | Clustering 502 players into 5 tactical profiles, radar charts and individual comparison tool |
 | 04 | [Scouting Dashboard](04_scouting/) | Streamlit · Plotly · FBref | Interactive dashboard with beeswarm plots, position-adjusted percentiles and player similarity (PL 2024-25) |
 | 05 | [Tactical Analysis](05_tactical_analysis/) | mplsoccer · StatsBomb | Average positions, season pass network, PPDA and pressing maps — Leicester City 2015/16 |
+| 06 | [xG Model](06_xg_model/) | scikit-learn · StatsBomb | Expected Goals model from scratch: geometric features + freeze frame, Logistic Regression vs Gradient Boosting |
 
 ---
 
