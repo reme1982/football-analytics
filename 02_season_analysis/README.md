@@ -94,6 +94,14 @@ jupyter notebook Season_Analysis_SQL.ipynb
 
 Full-season statistical analysis using a **SQLite** database containing 1.3 million events from all 380 matches of the 2015/16 Premier League.
 
+| Top Scorers | xG vs Goals |
+|---|---|
+| ![Top scorers](graficos/sql_01_goleadores.png) | ![xG by team](graficos/sql_02_xg_equipos.png) |
+
+| Team Rankings | Top Matches |
+|---|---|
+| ![Rankings](graficos/sql_03_ranking_equipos.png) | ![High-scoring matches](graficos/sql_04_partidos_mas_goles.png) |
+
 ### Key Findings
 
 **1. Arsenal led in possession, Tottenham in shots**
