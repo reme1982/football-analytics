@@ -3,8 +3,13 @@
 Dashboard web interactivo para analizar y comparar jugadores de la Premier League 2024-25,
 construido con Streamlit y datos de FBref.
 
-<!-- Screenshot del dashboard — reemplazar con imagen real -->
-![Scouting Dashboard](graficos/dashboard_preview.png)
+![Visión General](graficos/01_vision_general.png)
+
+| Perfil de Jugador | Beeswarm |
+|---|---|
+| ![Perfil](graficos/02_perfil_jugador.png) | ![Beeswarm](graficos/03_beeswarm.png) |
+
+![Jugadores Similares](graficos/04_similares.png)
 
 ---
 

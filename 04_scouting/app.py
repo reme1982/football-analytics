@@ -106,7 +106,7 @@ def percentile_bar_chart(row, metrics, pos):
         textposition='outside', textfont_color='white',
         hovertemplate='%{y}: <b>%{x:.0f}° percentil</b><extra></extra>',
     ))
-    fig.add_vline(x=50, line_dash='dot', line_color='#ffffff44')
+    fig.add_vline(x=50, line_dash='dot', line_color='rgba(255,255,255,0.27)')
     fig.update_xaxes(range=[0, 120])
     return dark_fig(fig, f'Perfil de percentiles — {pos}')
 
