@@ -3,6 +3,18 @@
 ¿Cómo ganó Leicester City la Premier League 2015/16 siendo 5000-1 en las apuestas?
 Este proyecto usa datos de eventos de StatsBomb para descomponer el ADN táctico del equipo jornada a jornada.
 
+| Posiciones Medias | Red de Pases |
+|---|---|
+| ![Posiciones](graficos/p05_01_posiciones_medias.png) | ![Red de pases](graficos/p05_02_red_pases.png) |
+
+| PPDA por Jornada | Análisis de Kanté |
+|---|---|
+| ![PPDA](graficos/p05_03_ppda.png) | ![Kanté](graficos/p05_07_kante.png) |
+
+| Mapa de Presiones | Zonas de Recuperación |
+|---|---|
+| ![Presiones](graficos/p05_05_presiones.png) | ![Recuperaciones](graficos/p05_06_recuperaciones.png) |
+
 ---
 
 ## Análisis realizados
