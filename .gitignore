@@ -1,5 +1,23 @@
+# Jupyter
 .ipynb_checkpoints/
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
 .env
+
+# Bases de datos generadas
 *.db
+
+# Caché de soccerdata / FBref
+downloaded_files/
+04_scouting/downloaded_files/
+
+# Memoria interna de Claude Code
+.claude/
+
+# Scripts de exploración temporales
+01_explorar_competencias.py
+02_competencias_detalladas.py
+03_player_profiles/extract_insights.py

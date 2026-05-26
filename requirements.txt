@@ -1,6 +1,18 @@
+# Proyecto 01 — Análisis de partido
 statsbombpy
-pandas
-matplotlib
 mplsoccer
+matplotlib
+pandas
 numpy
 jupyter
+
+# Proyecto 02 — Análisis de temporada SQL
+# (solo stdlib: sqlite3)
+
+# Proyecto 03 — Perfiles de jugadores con ML
+scikit-learn
+
+# Proyecto 04 — Scouting Dashboard
+streamlit
+plotly
+soccerdata

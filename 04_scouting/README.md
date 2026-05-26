@@ -3,6 +3,9 @@
 Dashboard web interactivo para analizar y comparar jugadores de la Premier League 2024-25,
 construido con Streamlit y datos de FBref.
 
+<!-- Screenshot del dashboard — reemplazar con imagen real -->
+![Scouting Dashboard](graficos/dashboard_preview.png)
+
 ---
 
 ## Resumen
@@ -88,6 +91,9 @@ El dashboard abre automáticamente en http://localhost:8501
 
 Interactive web dashboard for analyzing and comparing Premier League 2024-25 players,
 built with Streamlit and FBref data.
+
+<!-- Dashboard screenshot — replace with actual image -->
+![Scouting Dashboard](graficos/dashboard_preview.png)
 
 ### Overview
 
