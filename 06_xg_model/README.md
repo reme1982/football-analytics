@@ -19,6 +19,21 @@ Compara Logistic Regression vs Gradient Boosting y valida los resultados a nivel
 
 ---
 
+## En palabras simples
+
+> **¿De qué trata este proyecto?**
+> Enseñamos a una computadora a predecir si un tiro va a ser gol o no, antes de que ocurra.
+> Para eso usamos información de cada tiro: ¿desde qué distancia? ¿con qué ángulo al arco? ¿de cabeza o de pie? ¿había rivales en el camino?
+
+> **¿Qué encontramos?**
+> - De cada 10 tiros en la Premier League 2015/16, solo **1 fue gol**.
+> - La geometría manda: cuanto más cerca y más centrado estés del arco, más probabilidades tienes de marcar.
+> - Leicester City ganó la liga siendo **más eficientes que sus rivales**: marcaron más goles de los que su calidad de tiros predecía — no fue suerte, fue efectividad real.
+> - **Jamie Vardy** fue uno de los delanteros más clínicos: convirtió chances que estadísticamente no debería haber convertido.
+> - El modelo acierta **8 de cada 10 veces** al predecir si un tiro será gol o no.
+
+---
+
 ## Hallazgos principales
 
 **1. Distancia y ángulo son las features más importantes**
@@ -120,6 +135,19 @@ Compares Logistic Regression vs Gradient Boosting and validates results at team 
 | ![xG Map](graficos/p06_05_xg_map.png) | ![Teams](graficos/p06_06_equipos_xg.png) |
 
 ![Player efficiency](graficos/p06_07_jugadores_xg.png)
+
+### In plain words
+
+> **What is this project about?**
+> We trained a computer to predict whether a shot will be a goal or not, before it happens.
+> To do that, we fed it information about each shot: how far away? what angle to the goal? header or foot? were defenders in the way?
+
+> **What did we find?**
+> - Out of every 10 shots in the Premier League 2015/16, only **1 was a goal**.
+> - Geometry rules: the closer and more central you are to goal, the more likely you are to score.
+> - Leicester City won the league by being **more efficient than their rivals**: they scored more goals than their shot quality predicted — that's real clinical finishing, not luck.
+> - **Jamie Vardy** was one of the most clinical strikers: he converted chances that statistically he shouldn't have.
+> - The model gets it right **8 out of 10 times** when predicting whether a shot will be a goal.
 
 ### Key Findings
 
