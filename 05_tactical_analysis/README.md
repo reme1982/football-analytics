@@ -98,6 +98,18 @@ jupyter notebook Tactical_Analysis.ipynb
 How did Leicester City win the 2015/16 Premier League at 5000-1 odds?
 This project uses StatsBomb event data to decompose the team's tactical DNA across the full season.
 
+| Average Positions | Pass Network |
+|---|---|
+| ![Positions](graficos/p05_01_posiciones_medias.png) | ![Pass network](graficos/p05_02_red_pases.png) |
+
+| PPDA by Matchday | Kanté Analysis |
+|---|---|
+| ![PPDA](graficos/p05_03_ppda.png) | ![Kanté](graficos/p05_07_kante.png) |
+
+| Pressing Heatmap | Recovery Zones |
+|---|---|
+| ![Pressing](graficos/p05_05_presiones.png) | ![Recoveries](graficos/p05_06_recuperaciones.png) |
+
 ### Analysis performed
 
 | Visualization | Technique |
