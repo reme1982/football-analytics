@@ -11,6 +11,7 @@ Colección de proyectos de análisis de fútbol usando datos abiertos de **Stats
 | 01 | [Manchester City vs Liverpool](Analisis_StatsBomb.ipynb) | Python · mplsoccer | Análisis profundo de un partido: xG, mapas de tiros, red de pases, evolución por minuto |
 | 02 | [Análisis de Temporada con SQL](02_season_analysis/) | SQLite · pandas | Base de datos con 1.3M eventos, consultas SQL sobre los 380 partidos de la Premier League 2015/16 |
 | 03 | [Perfiles de Jugadores con ML](03_player_profiles/) | scikit-learn · KMeans | Clustering de 502 jugadores en 5 perfiles tácticos, radar charts y comparador individual |
+| 04 | [Scouting Dashboard](04_scouting/) | Streamlit · Plotly · FBref | Dashboard interactivo con beeswarm, percentiles por posición y similitud de jugadores (PL 2024-25) |
 
 ---
 
@@ -63,7 +64,7 @@ Manchester City distribuyó desde atrás con Kolarov (86 pases) como principal c
 
 ## Tecnologías
 
-- **Python 3** · **statsbombpy** · **pandas** · **matplotlib** · **mplsoccer** · **scikit-learn** · **SQLite3**
+- **Python 3** · **statsbombpy** · **pandas** · **matplotlib** · **mplsoccer** · **scikit-learn** · **SQLite3** · **Streamlit** · **Plotly** · **soccerdata**
 
 ## Cómo ejecutar
 
@@ -97,6 +98,7 @@ A collection of football data analysis projects using **StatsBomb** open data an
 | 01 | [Manchester City vs Liverpool](Analisis_StatsBomb.ipynb) | Python · mplsoccer | Deep single-match analysis: xG, shot maps, pass networks, minute-by-minute evolution |
 | 02 | [Season Analysis with SQL](02_season_analysis/) | SQLite · pandas | Database with 1.3M events, SQL queries across all 380 matches of the 2015/16 Premier League |
 | 03 | [Player Profiling with ML](03_player_profiles/) | scikit-learn · KMeans | Clustering 502 players into 5 tactical profiles, radar charts and individual comparison tool |
+| 04 | [Scouting Dashboard](04_scouting/) | Streamlit · Plotly · FBref | Interactive dashboard with beeswarm plots, position-adjusted percentiles and player similarity (PL 2024-25) |
 
 ---
 
@@ -149,7 +151,7 @@ Manchester City built from the back with Kolarov (86 passes) as the main distrib
 
 ## Tech Stack
 
-- **Python 3** · **statsbombpy** · **pandas** · **matplotlib** · **mplsoccer** · **scikit-learn** · **SQLite3**
+- **Python 3** · **statsbombpy** · **pandas** · **matplotlib** · **mplsoccer** · **scikit-learn** · **SQLite3** · **Streamlit** · **Plotly** · **soccerdata**
 
 ## How to Run
 
