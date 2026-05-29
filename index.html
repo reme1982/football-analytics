@@ -154,6 +154,47 @@
     }
     footer a { color: #58a6ff; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+
+    /* SECTION DIVIDER */
+    .section-header {
+      margin: 56px 0 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #21262d;
+    }
+    .section-header h2 {
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      color: #f0f6fc;
+      font-weight: 700;
+    }
+    .section-header p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: #8b949e;
+    }
+
+    /* PLACEHOLDER for cards without screenshot */
+    .card-placeholder {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #161b22 0%, #1c2128 100%);
+      border-bottom: 1px solid #21262d;
+    }
+    .card-placeholder span {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #e67e22;
+      opacity: 0.6;
+      letter-spacing: 2px;
+    }
+
+    /* Barca Hub card accent */
+    .card.barca:hover { border-color: #e67e22; }
+    .card-number.barca { color: #e67e22; }
+    .card-link.barca { background: #e67e22; }
+    .card-link.barca:hover { background: #f39c12; }
   </style>
 </head>
 <body>
@@ -317,10 +358,103 @@
     </div>
 
   </div>
+
+  <!-- ── BARCA HUB SECTION ─────────────────────────────────────────── -->
+  <div class="section-header">
+    <h2>Ciencia del Rendimiento Físico con R</h2>
+    <p>Tres proyectos de análisis físico en fútbol — GPS, tracking y wellness — desarrollados en el diplomado <strong>FC Barcelona Hub</strong>.</p>
+    <div class="badge-row" style="justify-content:flex-start; margin-top:12px;">
+      <span class="badge" style="color:#e67e22;">R</span>
+      <span class="badge" style="color:#e67e22;">FC Barcelona Hub</span>
+      <span class="badge" style="color:#e67e22;">GPS Tracking</span>
+      <span class="badge" style="color:#e67e22;">Shiny</span>
+      <span class="badge" style="color:#e67e22;">Metrica Sports</span>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- S01 -->
+    <div class="card barca">
+      <div class="card-placeholder"><span>S01</span></div>
+      <div class="card-body">
+        <div class="card-number barca">Sport Science 01</div>
+        <div class="card-title">Análisis de Sesiones GPS</div>
+        <div class="card-desc">
+          Monitoreo de carga física por posición en sesiones de entrenamiento.
+          <ul>
+            <li>Extremos y laterales lideran en distancia HSR</li>
+            <li>MD-3 muestra mayor intensidad que MD-4 al acercarse el partido</li>
+            <li>Z-scores detectan jugadores con sobrecarga o bajo rendimiento</li>
+          </ul>
+        </div>
+        <div class="card-tags">
+          <span class="tag">tidyverse</span>
+          <span class="tag">GPS</span>
+          <span class="tag">Z-Scores</span>
+          <span class="tag">ggplot2</span>
+        </div>
+        <a class="card-link barca" href="https://reme1982.github.io/sport_scientists/S01_gps_session_analysis/GPS_Session_Analysis.html">Ver Notebook →</a>
+      </div>
+    </div>
+
+    <!-- S02 -->
+    <div class="card barca">
+      <div class="card-placeholder"><span>S02</span></div>
+      <div class="card-body">
+        <div class="card-number barca">Sport Science 02</div>
+        <div class="card-title">Fatiga Física — Tracking Metrica</div>
+        <div class="card-desc">
+          Velocidad y zonas de esfuerzo calculadas desde datos de tracking a 25 Hz.
+          <ul>
+            <li>Coordenadas crudas convertidas a metros reales (105 × 68 m)</li>
+            <li>5 zonas de esfuerzo: Caminando / Trote / Carrera / HSR / Sprint</li>
+            <li>Caída en HSR en 2do tiempo — fatiga cuantificada por jugador</li>
+          </ul>
+        </div>
+        <div class="card-tags">
+          <span class="tag">zoo</span>
+          <span class="tag">25 Hz Tracking</span>
+          <span class="tag">Fatiga</span>
+          <span class="tag">HSR</span>
+        </div>
+        <a class="card-link barca" href="https://reme1982.github.io/sport_scientists/S02_metrica_fatigue/Metrica_Fatigue_Analysis.html">Ver Notebook →</a>
+      </div>
+    </div>
+
+    <!-- S03 -->
+    <div class="card barca">
+      <div class="card-placeholder"><span>S03</span></div>
+      <div class="card-body">
+        <div class="card-number barca">Sport Science 03</div>
+        <div class="card-title">Dashboard de Wellness</div>
+        <div class="card-desc">
+          App interactiva Shiny para monitoreo diario del bienestar del plantel.
+          <ul>
+            <li>Tarjetas KPI con sistema de semáforo (Verde / Ámbar / Rojo)</li>
+            <li>Tendencia de Sueño y Fatiga por jugador y rango de fechas</li>
+            <li>Mapa de calor comparativo entre todos los jugadores del plantel</li>
+          </ul>
+        </div>
+        <div class="card-tags">
+          <span class="tag">Shiny</span>
+          <span class="tag">Wellness</span>
+          <span class="tag">RPE</span>
+          <span class="tag">ggplot2</span>
+        </div>
+        <a class="card-link barca" href="https://github.com/reme1982/sport_scientists/blob/main/S03_wellness_dashboard/app.R">Ver Código →</a>
+      </div>
+    </div>
+
+  </div>
 </main>
 
 <footer>
-  <p>Data: <a href="https://github.com/statsbomb/open-data">StatsBomb Open Data</a> — free for education and research &nbsp;|&nbsp; <a href="https://github.com/reme1982/football-analytics">GitHub Repository</a></p>
+  <p>
+    <a href="https://github.com/statsbomb/open-data">StatsBomb Open Data</a> &nbsp;|&nbsp;
+    <a href="https://github.com/reme1982/football-analytics">football-analytics</a> &nbsp;|&nbsp;
+    <a href="https://github.com/reme1982/sport_scientists">sport-scientists</a>
+  </p>
 </footer>
 
 </body>
