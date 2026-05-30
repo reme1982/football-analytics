@@ -195,6 +195,13 @@
     .card-number.barca { color: #e67e22; }
     .card-link.barca { background: #e67e22; }
     .card-link.barca:hover { background: #f39c12; }
+
+    /* Liga Expansión card accent */
+    .card.expansion:hover { border-color: #27ae60; }
+    .card-number.expansion { color: #27ae60; }
+    .card-link.expansion { background: #27ae60; }
+    .card-link.expansion:hover { background: #2ecc71; }
+    .card-placeholder span.expansion-text { color: #27ae60; }
   </style>
 </head>
 <body>
@@ -447,6 +454,72 @@
     </div>
 
   </div>
+
+  <!-- ── LIGA EXPANSIÓN SECTION ──────────────────────────────────────────── -->
+  <div class="section-header">
+    <h2>Análisis Aplicado — Liga de Expansión MX</h2>
+    <p>Análisis de rendimiento de clubes de la segunda división mexicana, desarrollados como demostración metodológica con datos públicos.</p>
+    <div class="badge-row" style="justify-content:flex-start; margin-top:12px;">
+      <span class="badge" style="color:#27ae60;">R</span>
+      <span class="badge" style="color:#27ae60;">Liga de Expansión MX</span>
+      <span class="badge" style="color:#27ae60;">Sofascore</span>
+      <span class="badge" style="color:#27ae60;">ggplot2</span>
+      <span class="badge" style="color:#27ae60;">patchwork</span>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- LX01 Tapatío -->
+    <div class="card expansion">
+      <div class="card-placeholder"><span class="expansion-text">TAP</span></div>
+      <div class="card-body">
+        <div class="card-number expansion">Liga Expansión 01</div>
+        <div class="card-title">Rendimiento CD Tapatío — Clausura 2026</div>
+        <div class="card-desc">
+          Análisis colectivo e individual del equipo filial de Chivas.
+          <ul>
+            <li>Brecha local/visitante: 68% de puntos en casa</li>
+            <li>Índice de contribución por 90 min para 14 jugadores</li>
+            <li>3 propuestas concretas para el Apertura 2026</li>
+          </ul>
+        </div>
+        <div class="card-tags">
+          <span class="tag">tidyverse</span>
+          <span class="tag">ggplot2</span>
+          <span class="tag">patchwork</span>
+          <span class="tag">Liga Expansión</span>
+        </div>
+        <a class="card-link expansion" href="liga_expansion/tapatio/Analisis_Tapatio_Clausura2026.html">Ver Análisis →</a>
+      </div>
+    </div>
+
+    <!-- LX02 Tepatitlán -->
+    <div class="card expansion">
+      <div class="card-placeholder"><span class="expansion-text">TEP</span></div>
+      <div class="card-body">
+        <div class="card-number expansion">Liga Expansión 02</div>
+        <div class="card-title">Rendimiento Tepatitlán FC — Clausura 2026</div>
+        <div class="card-desc">
+          Análisis de un equipo con fortaleza local pero sin victorias de visitante.
+          <ul>
+            <li>6V·0E·1D en casa vs 0V·3E·4D de visitante</li>
+            <li>Dependencia ofensiva: 40% de goles de un solo jugador</li>
+            <li>Perfil Sub-20 con mayor tasa de anotación por minuto</li>
+          </ul>
+        </div>
+        <div class="card-tags">
+          <span class="tag">tidyverse</span>
+          <span class="tag">ggplot2</span>
+          <span class="tag">patchwork</span>
+          <span class="tag">Liga Expansión</span>
+        </div>
+        <a class="card-link expansion" href="liga_expansion/tepatitlan/Analisis_Tepatitlan_Clausura2026.html">Ver Análisis →</a>
+      </div>
+    </div>
+
+  </div>
+
 </main>
 
 <footer>
